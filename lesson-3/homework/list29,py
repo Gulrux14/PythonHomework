@@ -1,0 +1,4 @@
+def remove_element_by_index(lst, index):
+    if 0 <= index < len(lst):
+        del lst[index]
+    return lst
