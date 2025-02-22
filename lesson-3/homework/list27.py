@@ -1,5 +1,2 @@
-def get_middle_element(lst):
-    if not lst:
-        return None
-    mid = len(lst) // 2
-    return lst[mid] if len(lst) % 2 else (lst[mid - 1], lst[mid])
+def max_of_sublist(lst, start, end):
+    return max(lst[start:end]) if lst[start:end] else None

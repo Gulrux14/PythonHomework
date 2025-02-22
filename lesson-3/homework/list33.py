@@ -1,2 +1,2 @@
-def merge_and_sort(lst1, lst2):
-    return sorted(lst1 + lst2)
+def find_all_indices(lst, element):
+    return [i for i, x in enumerate(lst) if x == element]

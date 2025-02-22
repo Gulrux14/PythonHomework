@@ -1,2 +1,2 @@
-def create_range_list(start, end):
-    return list(range(start, end + 1))
+def sum_of_positive_numbers(lst):
+    return sum(x for x in lst if x > 0)

@@ -1,2 +1,3 @@
-def find_all_indices(lst, element):
-    return [i for i, x in enumerate(lst) if x == element]
+def rotate_list(lst, shift):
+    shift = shift % len(lst) if lst else 0
+    return lst[-shift:] + lst[:-shift]
