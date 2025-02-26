@@ -2,7 +2,7 @@ import sys
 import os
 
 # modules papkasini qidirish yo‘liga qo‘shish
-sys.path.append(os.path.join(os.path.dirname(file), "modules"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "modules"))
 
 from bank_system import Bank
 
@@ -45,5 +45,5 @@ def main():
         else:
             print("⚠️ Noto‘g‘ri tanlov!")
 
-if name == "main":
+if __name__ == "__main__":
     main()
